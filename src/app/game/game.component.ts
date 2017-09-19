@@ -20,14 +20,16 @@ export class GameComponent implements OnInit {
 
   ngOnInit() {
     this.getRandomId();
-    setTimeout((router: Router) => {
-      this.router.navigate(['submit']);
-    }, 15000);
+    // setTimeout((router: Router) => {
+    //   this.router.navigate(['submit']);
+    // }, 15000);
   }
 
   startGame() {
     this.start();
-    
+    setTimeout((router: Router) => {
+      this.router.navigate(['submit']);
+    }, 15000);
   }
 
   private start(){
